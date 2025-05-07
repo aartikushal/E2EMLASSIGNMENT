@@ -5,7 +5,7 @@ import pickle
 
 # Load the trained XGBoost model
 with open('xgb_regressor_model.pkl', 'rb') as file:
-    model = pickle.load(file)
+    m = pickle.load(file)
 
 # Set the title of the app
 st.title('Price Prediction with XGBoost')
@@ -30,7 +30,7 @@ input_features = np.array([[feature_1, feature_2, feature_3, feature_4, feature_
 # When the user clicks the button, predict the price
 if st.button('Predict Price'):
     # Make prediction using the loaded model
-    predicted_price = model.predict(input_features)[0]
+    predicted_price = m.predict(input_features)[0]
     
     # Display the result
     st.write(f'Predicted Price: ${predicted_price:,.2f}')
