@@ -2,9 +2,10 @@ import streamlit as st
 import numpy as np
 import pickle
 
-# Load the model
-with open('xgb_regressor_model.pkl', 'rb') as f:
-    model = pickle.load(f)
+
+# Load the trained XGBoost model
+with open('xgb_regressor_model.pkl', 'rb') as file:
+    model = pickle.load(file)
 
 # Set the title of the app
 st.title('Price Prediction with XGBoost')
