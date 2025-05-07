@@ -1,7 +1,8 @@
+!pip install xgboost
+
 import streamlit as st
 import numpy as np
 import pickle
-from xgboost import XGBRegressor
 
 # Load the trained XGBoost model
 with open('xgb_regressor_model.pkl', 'rb') as file:
