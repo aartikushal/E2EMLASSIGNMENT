@@ -12,7 +12,7 @@ st.title('Price Prediction with XGBoost')
 
 # Add a description of the app
 st.write("""
-This is a price prediction app built using **XGBoost**. 
+This is a price prediction app built using 
 Please input the features to predict the price.
 """)
 
