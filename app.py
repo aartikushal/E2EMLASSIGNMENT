@@ -1,4 +1,4 @@
-import Sklearn
+import sklearn
 import xgboost
 import streamlit as st
 import numpy as np
