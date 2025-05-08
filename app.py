@@ -1,5 +1,5 @@
-!pip install sklearn
-!pip install xgboost
+install sklearn
+install xgboost
 import streamlit as st
 import numpy as np
 import pickle
